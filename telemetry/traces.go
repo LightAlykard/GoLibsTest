@@ -12,7 +12,7 @@ import (
 )
 
 func RunTracingCollection(ctx context.Context) (*tracesdk.TracerProvider, error) {
-	url := "http://127.0.0.1:16686/api/traces"
+	url := "http://127.0.0.1:14278/api/traces"
 
 	// Create the Jaeger exporter
 	exp, err := jaeger.New(jaeger.WithCollectorEndpoint(jaeger.WithEndpoint(url)))
